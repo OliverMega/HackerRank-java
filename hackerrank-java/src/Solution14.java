@@ -18,6 +18,7 @@ public class Solution14 {
 		System.out.println(A.length() + B.length());
 		
 		// Determine if A is lexicographically larger than B (i.e.: does B come before A in the dictionary?).
+		//  比較字母順序大小A的字串的字母大於B，回傳"Yes"，否則回傳"No"
 		if (A.compareTo(B) > 0) {
 			System.out.println("Yes");
 		} else {
@@ -25,6 +26,7 @@ public class Solution14 {
 		}
 		
 		// 開頭字從小寫變大寫
+		// 先將開頭字母變成大寫，再接剩下的字串
 		System.out.println(A.toUpperCase().charAt(0) + A.substring(1) + " " + B.toUpperCase().charAt(0) + B.substring(1));
 		
 	}

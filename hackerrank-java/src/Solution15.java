@@ -14,6 +14,7 @@ public class Solution15 {
         int start = in.nextInt();
         int end = in.nextInt();
         
+        // 取字串S的某些字元
         System.out.println(S.substring(start, end));
         
         in.close();
